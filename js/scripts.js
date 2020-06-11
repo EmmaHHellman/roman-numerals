@@ -1,4 +1,5 @@
 // UI Logic
+
 $(document).ready(function() {
   $("#roman-num").submit(function(event) {
     const number = parseInt($("input#number").val());
@@ -27,29 +28,33 @@ function romanNumerals(number) {
     I: 1,
   };
   
-  const numbers = [1, 5, 10, 50, 100, 500, 1000]
-  
-  for (var i = 0; i < romanList.length; i++) {
-
+  let roman = "";
+  for (var key in romanList) {
+    while (number >= romanList[key]) {
+      roman += key;
+      number -= romanList[key];
+    }
   }
-  if (number === 1) {
-    return romanList[0];
-  }
-  else if (number === 5) {
-    return romanList[1];
-  }
-  else if (number === 10) {
-    return romanList[2];
-  }
-  else if (number === 50) {
-    return romanList[3];
-  } 
-  else if (number === 100) {
-    return romanList[4];
-  }
-  else if (number === 500) {
-    return romanList[5];
-  }
-  else if (number === 1000)
-    return romanList[6];
+  return result = roman
 }
+
+  //   if (number === 1) {
+//     return romanList[0];
+//   }
+//   else if (number === 5) {
+//     return romanList[1];
+//   }
+//   else if (number === 10) {
+//     return romanList[2];
+//   }
+//   else if (number === 50) {
+//     return romanList[3];
+//   } 
+//   else if (number === 100) {
+//     return romanList[4];
+//   }
+//   else if (number === 500) {
+//     return romanList[5];
+//   }
+//   else if (number === 1000)
+//     return romanList[6]; 
