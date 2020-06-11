@@ -1,4 +1,4 @@
-# _{Application Name}_
+# _Roman Numerals_
 
 #### _{Brief description of application}, {Date of current version}_
 
@@ -7,6 +7,58 @@
 ## Description
 
 _{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+
+## Specifications
+
+##Behavior##
+
+Translate 1,2, or 3 into I,II or III
+Input: 2
+Output: II
+
+Input: 3
+Output: III
+
+##Behavior##
+
+Translate 5 into a V when input by user
+Input: 5
+Output: V
+
+##Behavior##
+
+Translate 10 into X when input by user
+Input: 10
+Output: X
+
+##Behavior##
+
+Translate 50 into L when input by user
+Input: 50
+Output: L
+
+##Behavior##
+
+Translate 100 into a C when input by user
+Input: 100
+Output: C
+
+##Behavior##
+
+Translate 500 into a D when input by user
+Input: 500
+Output: D
+
+##Behavior##
+
+Translate 1000 into a M when input by user
+Input: 1000
+Output: M
+
+
+
+
+
 
 ## Setup/Installation Requirements
 
