@@ -11,10 +11,26 @@ event.preventDefault();
 // Business Logic
 
 function romanNumerals(number) {
-  const romanList = ["I", "V", "X", "L", "C", "D", "M"];
+  const romanList = {
+    M: 1000,
+    CM: 900,
+    D: 500,
+    CD: 400,
+    C: 100,
+    LC: 90,
+    L: 50,
+    XL: 40,
+    X: 10,
+    IX:9,
+    V: 5,
+    IV: 4,
+    I: 1,
+  };
+  
   const numbers = [1, 5, 10, 50, 100, 500, 1000]
-  for (var i = 0; i<numbers.length; i++) {
-    
+  
+  for (var i = 0; i < romanList.length; i++) {
+
   }
   if (number === 1) {
     return romanList[0];
